@@ -13,7 +13,10 @@ X = dataset.iloc[:, [3,4]].values
 # Use the Dendrogram to find the optimal number of clusters
 import scipy.cluster.hierarchy as sch
 dendrogram = sch.dendrogram(sch.linkage(X, method = 'ward'))
-
+plt.title('Dendrogram')
+plt.xlabel('Customers (Observation Points)') # x-axis are the rows -> the customers!
+plt.ylabel('Euclidean Distance')
+plt.show();
 
 # Train the Hierarchical Clustering model on the dataset
 
