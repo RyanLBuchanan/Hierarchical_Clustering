@@ -19,7 +19,9 @@ plt.ylabel('Euclidean Distance')
 plt.show();
 
 # Train the Hierarchical Clustering model on the dataset
-
+from sklearn.cluster import AgglomerativeClustering
+hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward')
+y_hc = hc.fit_predict(X)
 
 # Visualize the clusters
 plt.legend()
