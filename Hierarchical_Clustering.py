@@ -13,7 +13,7 @@ X = dataset.iloc[:, [3,4]].values
 # Use the Dendrogram to find the optimal number of clusters
 
 
-# Train the Hierarchical CLustering model on the dataset
+# Train the Hierarchical Clustering model on the dataset
 
 
 # Visualize the clusters
